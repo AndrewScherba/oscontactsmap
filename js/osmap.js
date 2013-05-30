@@ -188,10 +188,11 @@ $(function(){
     }
     var name = project['Organisation / Event '];
     if (isEmpty(name)) { name = 'N/A'; }
+
     var html = '<dl>';
     var orgEvent;
     if (url){
-      orgEvent = '<a href="' + url + '">' + name + '</a>';
+      orgEvent = '<a target="_blank" href="' + url + '">' + name + '</a>';
     } else {
       orgEvent = name;
     }
